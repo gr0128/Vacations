@@ -1,0 +1,85 @@
+.header {
+    height: 100%;
+    margin: 0;
+    background-color: rgb(3, 3, 90);
+    position: relative;
+
+}
+
+.header>h1{
+    font-family: 'Brush Script MT', cursive;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    color:rgb(163, 214, 209);
+    transform: translate(5%, -50%);
+    font-size: 50px;
+}
+
+.header>div{
+    position: absolute;
+    right: 10%;
+    top: 52%;
+    -ms-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
+    width: 25%;
+}
+
+.header>div>input{
+    background-color: rgb(3, 3, 90);
+    border: 1px solid white;
+    color: white;
+    width: min-content;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    float: right;
+}
+
+@media screen and (max-width: 900px){
+    .header>h1{
+        font-size: 43px;
+    }
+
+    .header>div{
+        width: 30%;
+    }
+
+    .header>div>input{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .header>h1{
+        font-size: 35px;
+    }
+    .header>div{
+        width: 35%;
+        right:5%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .header>h1{
+        font-size: 28px;
+    }
+    .header>div{
+        width: 40%;
+    }
+    .header>div>input{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .header>h1{
+        font-size: 24px;
+    }
+    .header>div{
+        width: 40%;
+    }
+    .header>div>input{
+        font-size: 8px;
+    }
+}

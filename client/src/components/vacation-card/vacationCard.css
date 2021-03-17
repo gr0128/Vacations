@@ -1,0 +1,139 @@
+.vacation{
+    border: 0.01px solid black;
+    position: relative;
+    float: left;
+    width: 47%;
+    margin: 5% 0 0 1.9%  ;
+    height: 200px;
+    background-color:white
+}
+
+.vacation>img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 27%;
+    height: 100%;
+}
+.vacation>.destination{
+    position: absolute;
+    top:5%;
+    left:30%;
+    width:60%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: larger;
+    text-decoration: underline;
+}
+.vacation>.description{
+    position: absolute;
+    top:18%;
+    left:32%;
+    width:55%;
+    height: 50%;
+    font-family: Verdana, sans-serif;
+    text-align: left;
+    font-size: medium;
+}
+
+.vacation>.dates-and-followers{
+    position: absolute;
+    top:80%;
+    left:40%;
+    width:40%;
+    height: 10%;
+    font-family: Verdana, sans-serif;
+    text-align: center;
+    font-size: small;
+}
+.vacation>.price{
+    position: absolute;
+    top:80%;
+    right:4%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.vacation>.follow{
+    position: absolute;
+    right: 4%;
+    top: 10%;
+    width:min-content;
+    height: min-content;
+    color: darkred;
+}
+
+.follow:hover{
+    color: darksalmon;
+}
+
+.follow>.unfollow-tooltip,.follow>.follow-tooltip{
+    visibility: hidden;
+    position: absolute;
+}
+
+.follow:hover>.unfollow-tooltip,.follow:hover>.follow-tooltip{
+    visibility: visible;
+    width: max-content;
+    background-color:grey;
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    right: -25%;
+    top: -50%;
+}
+
+.follow>.heart:hover{
+    color: darksalmon;
+}
+.follow>.emptyheart{
+    color:grey;
+}
+.follow:hover>.emptyheart{
+    color: darksalmon;
+}
+    
+@media screen and (max-width: 1000px){
+    .vacation{
+        width: 80%;
+        margin-left: 10%;
+
+    }
+}
+
+@media screen and (max-width: 600px){
+    .vacation{
+        height: 150px;
+    }
+    
+    .vacation>.destination{
+        font-size: large;
+    }
+    .vacation>.description{
+        top:22%;
+        width:55%;
+        font-size: small;
+    }
+
+    .vacation>.dates-and-followers{
+        font-size: x-small;
+    }
+}
+
+@media screen and (max-width: 420px){
+    
+    .vacation>.destination{
+        font-size: medium;
+    }
+    .vacation>.description{
+        height: 45%;
+        font-size: smaller;
+    }
+
+    .vacation>.dates-and-followers{
+        top:78%;
+        left:35%;
+        width:45%;
+        height: 15%;
+    }
+}
